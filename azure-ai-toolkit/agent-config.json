@@ -1,0 +1,14 @@
+{
+  "name": "SimGuard Agent",
+  "slug": "simguard-agent",
+  "description": "An Azure AI Toolkit starter agent for guiding SimGuard users through incident checks, status questions, and operational support.",
+  "system_prompt_file": "./prompts/simguard-system.prompt.md",
+  "model_profiles_file": "./model-profiles.json",
+  "evals_file": "./evals/sample-tests.jsonl",
+  "capabilities": [
+    "chat",
+    "grounded-support",
+    "incident-triage",
+    "tool-calling-ready"
+  ]
+}

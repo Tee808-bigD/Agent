@@ -1,0 +1,48 @@
+{
+  "profiles": [
+    {
+      "id": "primary-chat",
+      "provider": "azure-openai",
+      "model": "gpt-4.1",
+      "purpose": "Best default for production-quality chat and agent responses.",
+      "env": {
+        "endpoint": "AZURE_OPENAI_ENDPOINT",
+        "api_key": "AZURE_OPENAI_API_KEY",
+        "deployment": "AZURE_OPENAI_CHAT_DEPLOYMENT"
+      }
+    },
+    {
+      "id": "fast-chat",
+      "provider": "azure-openai",
+      "model": "gpt-4.1-mini",
+      "purpose": "Lower-cost and lower-latency option for iterative testing.",
+      "env": {
+        "endpoint": "AZURE_OPENAI_ENDPOINT",
+        "api_key": "AZURE_OPENAI_API_KEY",
+        "deployment": "AZURE_OPENAI_FAST_DEPLOYMENT"
+      }
+    },
+    {
+      "id": "reasoning",
+      "provider": "azure-openai",
+      "model": "o4-mini",
+      "purpose": "Reasoning-focused profile for planning, debugging, and harder analysis.",
+      "env": {
+        "endpoint": "AZURE_OPENAI_ENDPOINT",
+        "api_key": "AZURE_OPENAI_API_KEY",
+        "deployment": "AZURE_OPENAI_REASONING_DEPLOYMENT"
+      }
+    },
+    {
+      "id": "embeddings",
+      "provider": "azure-openai",
+      "model": "text-embedding-3-large",
+      "purpose": "Embeddings profile for search, RAG, and semantic retrieval.",
+      "env": {
+        "endpoint": "AZURE_OPENAI_ENDPOINT",
+        "api_key": "AZURE_OPENAI_API_KEY",
+        "deployment": "AZURE_OPENAI_EMBEDDING_DEPLOYMENT"
+      }
+    }
+  ]
+}
